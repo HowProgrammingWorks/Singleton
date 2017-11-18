@@ -5,4 +5,7 @@ const Singleton = new (function() {
   return function() { return single; };
 })();
 
+// Usage
+
 console.assert(new Singleton() === new Singleton());
+console.log('instances are equal');

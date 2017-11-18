@@ -1,6 +1,6 @@
 'use strict';
 
-const Singleton = (function() {
+const Singleton = (() => {
   let instance;
 
   function Singleton() {
@@ -13,4 +13,7 @@ const Singleton = (function() {
   return Singleton;
 })();
 
+// Usage
+
 console.assert(new Singleton() === new Singleton());
+console.log('instances are equal');
