@@ -3,12 +3,12 @@
 const Singleton = (() => {
   let instance;
 
-  function Singleton() {
-    if (instance) return instance;
-    instance = this;
+  class Singleton {
+    constructor() {
+      if (instance) return instance;
+      instance = this;
+    }
   }
-
-  Singleton.prototype.test = function() {};
 
   return Singleton;
 })();

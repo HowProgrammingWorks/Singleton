@@ -1,7 +1,7 @@
 'use strict';
 
 function Singleton() {
-  const instance = Singleton.instance;
+  const { instance } = Singleton;
   if (instance) return instance;
   Singleton.instance = this;
 }
