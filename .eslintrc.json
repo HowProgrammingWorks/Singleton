@@ -182,7 +182,7 @@
       "error"
     ],
     "no-self-compare": [
-      "error"
+      "off"
     ],
     "no-unmodified-loop-condition": [
       "error"
@@ -213,7 +213,7 @@
     ],
     "arrow-parens": [
       "error",
-      "as-needed"
+      "always"
     ],
     "arrow-body-style": [
       "error",
