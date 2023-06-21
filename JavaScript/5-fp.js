@@ -1,6 +1,6 @@
 'use strict';
 
-const singleton = (instance => () => instance)({});
+const singleton = ((instance) => () => instance)({});
 
 // Usage
 
