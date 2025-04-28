@@ -2,14 +2,9 @@
 
 const init = require('eslint-config-metarhia');
 
-module.exports = [
-  ...init,
-  {
-    rules: {
-      'class-methods-use-this': 'off',
-      'no-self-compare': 'off',
-      'no-extra-parens': 'off',
-      'no-invalid-this': 'off',
-   },
-  },
-];
+init[0].rules['no-self-compare'] = 'off';
+init[0].rules['no-invalid-this'] = 'off';
+init[0].rules['no-extra-parens'] = 'off';
+init[0].ignores.push('**/*.mjs');
+
+module.exports = init;
