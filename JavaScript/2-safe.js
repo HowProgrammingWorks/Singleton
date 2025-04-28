@@ -1,8 +1,8 @@
 'use strict';
 
-const Singleton = new (function() {
+const Singleton = new (function () {
   const single = this;
-  return function() { return single; };
+  return function () { return single; };
 })();
 
 // Usage
